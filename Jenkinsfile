@@ -39,7 +39,7 @@ pipeline {
         }
         stage('Deployment') {
             steps {
-                sh 'cp target/declare3.war /home/therecker/DevOps/Maven/apache-tomcat-9.0.85/webapps/'
+                sh 'cp target/slack1.war /home/therecker/DevOps/Maven/apache-tomcat-9.0.85/webapps/'
             }
         }
 	stage('Slack Notification') {
