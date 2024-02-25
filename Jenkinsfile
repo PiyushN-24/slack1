@@ -43,8 +43,9 @@ pipeline {
             }
         }
 	stage('Slack Notification') {
-	    steps {}
+	    steps {
 		slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#slack-notification', color: 'good', message: 'Slack Notify Configured Success', teamDomain: 'DevOps'
+	    }
 	}	
     }
 }
